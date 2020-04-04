@@ -1,0 +1,12 @@
+version: '2'
+services:
+
+  ddclient:
+    image: rwd1/ddclient
+    container_name: ddclient
+    hostname: ddclient
+    restart: always
+    volumes:
+      - ./ddclient-config/ddclient.conf:/config
+
+        
